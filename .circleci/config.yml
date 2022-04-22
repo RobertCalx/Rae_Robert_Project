@@ -1,0 +1,10 @@
+version: 2
+jobs:
+  build:
+    docker:
+      # specify the version you desire here
+      - image: circleci/openjdk:15-jdk-buster
+
+    steps:
+      - checkout
+      - run: ant test
